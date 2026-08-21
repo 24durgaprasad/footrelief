@@ -51,7 +51,7 @@
 //<![CDATA[
       //function to fix height of iframe!
       var calcHeight = function() {
-        var headerDimensions = 70;
+        var headerDimensions = 0;
         $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
       }
 
@@ -70,11 +70,7 @@
   </head>
 
   <body class="full-screen-preview">
-    <div class="my-header" style="background:#111;padding:10px 20px;display:flex;align-items:center;gap:15px;position:fixed;top:0;left:0;right:0;z-index:9999;">
-      <img src="scraped/12Asset-1.png" alt="Serene Foot Relief Lounge" style="height:50px;">
-      <span style="color:#fff;font-size:20px;font-weight:600;">Serene Foot Relief Lounge</span>
-    </div>
-    <iframe class="full-screen-preview__frame" style="margin-top:70px;" src="https://dev266.kodesolution.com/luxearura/" name="preview-frame" frameborder="0" noresize="noresize" data-view="fullScreenPreview" allow="geolocation 'self'; autoplay 'self'">
+    <iframe class="full-screen-preview__frame" src="scraped/site.html" name="preview-frame" frameborder="0" noresize="noresize" data-view="fullScreenPreview" allow="geolocation 'self'; autoplay 'self'">
 </iframe>
 
 
