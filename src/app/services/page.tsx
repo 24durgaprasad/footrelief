@@ -1,0 +1,20 @@
+﻿import type { Metadata } from "next";
+import { PageHead } from "@/components/VendorStyles";
+
+export const metadata: Metadata = {
+    title: "services",
+};
+
+export default function Page() {
+    return (
+        <>
+            <PageHead postCss={[
+			"post-7055.css",
+            ]} />
+            <div className="elementor">
+                <h1>services</h1>
+                <p>Placeholder — content migrated in Phase 3.</p>
+            </div>
+        </>
+    );
+}
