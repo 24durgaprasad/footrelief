@@ -23,7 +23,7 @@ export default function RootLayout({
                 <style
                     id="sfrl-perf"
                     dangerouslySetInnerHTML={{
-                        __html: "html{scroll-behavior:smooth}body *{background-attachment:scroll!important}",
+                        __html: "html{scroll-behavior:smooth}body *{background-attachment:scroll!important}.ata-site-logo-container{display:flex!important;align-items:center}.elementor-279 .elementor-element.elementor-element-5a9afd1 .ata-site-logo img{max-height:none!important;height:60px!important;width:auto!important;margin:-5px 0!important}@media(min-width:1025px){.elementor-279 .elementor-element.elementor-element-5a9afd1 .ata-site-logo img{height:76px!important;margin:-13px 0!important}}",
                     }}
                 />
             </head>
