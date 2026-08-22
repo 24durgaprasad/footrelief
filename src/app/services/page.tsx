@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { PageHead } from "@/components/VendorStyles";
 import { PageShell } from "@/components/theme/PageShell";
 import { PAGE_CONTENT } from "@/lib/content";
 
-export const metadata: Metadata = {
-    title: "Our Services",
-};
+export const metadata: Metadata = pageMetadata("services");
 
 export default function Page() {
     return (

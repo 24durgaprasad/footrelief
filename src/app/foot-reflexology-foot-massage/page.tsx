@@ -1,11 +1,10 @@
 ﻿import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { PageHead } from "@/components/VendorStyles";
 import { PageShell } from "@/components/theme/PageShell";
 import { PAGE_CONTENT } from "@/lib/content";
 
-export const metadata: Metadata = {
-    title: "Foot Reflexology & Foot Massage",
-};
+export const metadata: Metadata = pageMetadata("foot-reflexology-foot-massage");
 
 export default function Page() {
     return (
