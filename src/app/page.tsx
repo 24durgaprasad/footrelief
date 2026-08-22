@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHead } from "@/components/VendorStyles";
 import { PageShell } from "@/components/theme/PageShell";
+import { PAGE_CONTENT } from "@/lib/content";
 
 export const metadata: Metadata = {
     title: "Serene Foot Relief Lounge",
@@ -20,10 +21,7 @@ export default function HomePage() {
                 ]}
             />
             <PageShell page="home">
-                <div className="elementor elementor-14">
-                    <h1>Step Into Complete Relaxation And Wellness</h1>
-                    <p>Placeholder — content migrated in Phase 3.</p>
-                </div>
+                <div dangerouslySetInnerHTML={{ __html: PAGE_CONTENT["home"] }} />
             </PageShell>
         </>
     );

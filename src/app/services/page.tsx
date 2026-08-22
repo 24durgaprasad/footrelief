@@ -1,6 +1,7 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { PageHead } from "@/components/VendorStyles";
 import { PageShell } from "@/components/theme/PageShell";
+import { PAGE_CONTENT } from "@/lib/content";
 
 export const metadata: Metadata = {
     title: "Our Services",
@@ -15,10 +16,7 @@ export default function Page() {
                 ]}
             />
             <PageShell page="services">
-                <div className="elementor">
-                    <h1>Our Services</h1>
-                    <p>Placeholder — content migrated in Phase 3.</p>
-                </div>
+                <div dangerouslySetInnerHTML={{ __html: PAGE_CONTENT["services"] }} />
             </PageShell>
         </>
     );

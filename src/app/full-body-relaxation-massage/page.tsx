@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import { PageHead } from "@/components/VendorStyles";
 import { PageShell } from "@/components/theme/PageShell";
+import { PAGE_CONTENT } from "@/lib/content";
 
 export const metadata: Metadata = {
     title: "Full Body Relaxation Massage",
@@ -17,10 +18,7 @@ export default function Page() {
                 ]}
             />
             <PageShell page="full-body-relaxation-massage">
-                <div className="elementor">
-                    <h1>Full Body Relaxation Massage</h1>
-                    <p>Placeholder — content migrated in Phase 3.</p>
-                </div>
+                <div dangerouslySetInnerHTML={{ __html: PAGE_CONTENT["full-body-relaxation-massage"] }} />
             </PageShell>
         </>
     );
