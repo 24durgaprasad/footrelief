@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHead } from "@/components/VendorStyles";
+import { PageShell } from "@/components/theme/PageShell";
 
 export const metadata: Metadata = {
     title: "Serene Foot Relief Lounge",
@@ -18,10 +19,12 @@ export default function HomePage() {
                     "post-5720.css",
                 ]}
             />
-            <div className="elementor elementor-14">
-                <h1>Step Into Complete Relaxation And Wellness</h1>
-                <p>Placeholder — content migrated in Phase 3.</p>
-            </div>
+            <PageShell page="home">
+                <div className="elementor elementor-14">
+                    <h1>Step Into Complete Relaxation And Wellness</h1>
+                    <p>Placeholder — content migrated in Phase 3.</p>
+                </div>
+            </PageShell>
         </>
     );
 }

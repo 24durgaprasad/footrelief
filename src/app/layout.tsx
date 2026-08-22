@@ -16,8 +16,19 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body className="wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-theme-revoza tt-magic-cursor fancy-scrollbar elementor-default elementor-template-full-width elementor-kit-10">
+        <html lang="en" suppressHydrationWarning>
+            <head>
+                <style
+                    id="sfrl-perf"
+                    dangerouslySetInnerHTML={{
+                        __html: "html{scroll-behavior:smooth}body *{background-attachment:scroll!important}",
+                    }}
+                />
+            </head>
+            <body
+                className="wp-singular page-template page-template-elementor_header_footer page wp-custom-logo wp-theme-revoza tt-magic-cursor fancy-scrollbar elementor-default elementor-template-full-width elementor-kit-10"
+                suppressHydrationWarning
+            >
                 {children}
             </body>
         </html>
