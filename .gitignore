@@ -12,3 +12,6 @@ out/
 
 # vercel
 .vercel
+
+# typescript incremental build cache
+*.tsbuildinfo
